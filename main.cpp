@@ -4,23 +4,29 @@ constexpr int N_ELEMENTS = 100;
 
 int main()
 {
-    int *b = new int[NELEMENTS];
-    std::cout << '1-100 ertekek duplazasa'
-    for (int i = 0;)
+    //N_ELEMENTS kellene
+    int *b = new int[NELEMENTS]; 
+    //szimpla idezojel es hianyzo pontosvesszo
+    std::cout << '1-100 ertekek duplazasa' 
+    //hianyzo feltetel es leptetes
+    for (int i = 0;) 
     {
-        b[i] = i * 2;
+        b[i] = i*2;
     }
-    for (int i = 0; i; i++)
+    //a feltetel miatt 0-nal azonnal kilep
+    for (int i = 0; i; i++) 
     {
-        std::cout << "Ertek:"
-    }    
+        std::cout << "Ertek:" //hianyzo pontosvesszo
+    }
     std::cout << "Atlag szamitasa: " << std::endl;
-    int atlag;
-    for (int i = 0; i < N_ELEMENTS, i++)
+    int atlag; //nincs inicializalva
+    //vesszo a pontosvesszo helyett
+    for (int i = 0; i < N_ELEMENTS, i++) 
     {
-        atlag += b[i]
+        atlag += b[i] //hianyzo pontosvesszo
     }
     atlag /= N_ELEMENTS;
     std::cout << "Atlag: " << atlag << std::endl;
+    //a lefoglalt memoria nincs felszabaditva
     return 0;
 }
